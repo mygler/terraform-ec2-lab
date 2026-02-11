@@ -8,9 +8,9 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
- defaults:
-  run:
-    working-directory: infra
+    defaults:
+      run:
+        working-directory: infra
 
     steps:
       - name: Checkout repo
@@ -27,3 +27,4 @@ jobs:
 
       - name: Terraform Output
         run: terraform output
+
